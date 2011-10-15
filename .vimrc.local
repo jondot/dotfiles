@@ -1,0 +1,41 @@
+" lifted from https://github.com/codegram/vimfiles/blob/master/vimrc
+"
+set statusline=%F%m%r%h%w[%L]%y[%p%%][%04v] "[%{fugitive#statusline()}]
+"              | | | | |  |   |      |  |     |    |
+"              | | | | |  |   |      |  |     |    + current
+"              | | | | |  |   |      |  |     |       column
+"              | | | | |  |   |      |  |     +-- current line
+"              | | | | |  |   |      |  +-- current % into file
+"              | | | | |  |   |      +-- current syntax in
+"              | | | | |  |   |          square brackets
+"              | | | | |  |   +-- current fileformat
+"              | | | | |  +-- number of lines
+"              | | | | +-- preview flag in square brackets
+"              | | | +-- help flag in square brackets
+"              | | +-- readonly flag in square brackets
+"              | +-- rodified flag in square brackets
+"              +-- full path to file in the rbuffer
+"}
+
+" Map ESC
+imap jj <ESC>
+nnoremap ; :
+
+" Move between splits
+nnoremap <C-h> <C-w>h
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-l> <C-w>l
+
+
+" Switch between buffers
+noremap <tab> :bn<CR>
+noremap <S-tab> :bp<CR>
+nmap <leader>d :bd<CR>
+nmap <leader>D :bufdo bd<CR>
+
+
+
+set guifont=Monaco\ 10.6
+imap <C-l> <space>=> 
+
