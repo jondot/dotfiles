@@ -37,5 +37,7 @@ nmap <leader>D :bufdo bd<CR>
 
 
 set guifont=Monaco\ 10.6
-imap <C-l> <space>=> 
+imap <C-k> <space>=> 
+imap <C-l> <esc>$a
+imap <C-h> <esc>^i
 
