@@ -12,6 +12,8 @@
     aa = add --all
     # Show files ignored by git:
     ign = ls-files -o -i --exclude-standard
+    shm = push origin master
+    llm = pull origin master
 [user]
 	name = Dotan Nahum
 	email = jondotan@gmail.com
